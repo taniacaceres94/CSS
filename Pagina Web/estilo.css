@@ -1,0 +1,83 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    /*font-family: 'Alegreya Sans SC', sans-serif;*/
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.contenedorA{
+    /*background-color: f0ebe2;*/
+    /*background-color: #ccb2a6;*/
+    background-color: #080808;
+    background-image: url("Objetos/text3.png");
+    height: 100%; 
+    color: black;
+    
+   
+}
+
+
+
+.contenido{
+    background-color: floralwhite;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative; /*Para que se me mueva la caja del centro pero el fondo no*/
+    top: 150%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    /*z-index: 2;*/
+    width: 1200px;
+    height: 2000px;
+    padding: 5px;
+    text-align: center;
+    
+   
+}
+
+.cabeceraTexto, h1{
+    position: absolute;
+    top: -27px;
+    left: 0px;
+    /*padding: 20px;*/
+   
+    width: 410px;
+    height: 600px;
+   
+    background-color: #2c2a29;
+    color: pink;
+   
+
+    
+}
+
+.cabeceraFoto, img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 800px;
+    height: 600px;
+   
+}
+
+.textoPresentacion, h2 {
+    position: absolute;
+    top: 33%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: initial;
+    font-family: ;
+}
+
+.textoPresentacion ,p{
+    position: absolute;
+    top: 38%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: left;
+}
+

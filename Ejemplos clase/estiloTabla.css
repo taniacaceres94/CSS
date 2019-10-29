@@ -1,0 +1,42 @@
+*{
+    text-align: center;
+}
+td:first-child{
+    color: saddlebrown;
+    
+}
+
+tr:nth-child(odd){
+    background-color: beige;
+}
+
+tr:nth-child(even){
+    background-color: coral;
+}
+
+th{
+    color: antiquewhite;
+    background-color: firebrick;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+td{
+    color: teal;
+    
+}
+
+tbody, tr:hover{
+    background-color: firebrick;
+    color: whitesmoke;
+}
+
+tbody, td:hover{
+    background-color: peru;
+    color: whitesmoke;
+    box-shadow:peru -1px 1px;
+    transform: translate3d(6px,6px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}

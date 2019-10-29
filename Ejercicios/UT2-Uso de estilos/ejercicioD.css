@@ -1,0 +1,31 @@
+.contenedor1{
+    border-width: 20px;
+    border-color: black; 
+    border-style: solid;
+    margin: 10px;
+    
+}
+
+.contenedor2{
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-style: dotted;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+    
+}
+
+.contenedor1:hover{
+    transition: 0.5s;
+    border-color: rgb(46, 110, 184);
+    border-width: 30px;
+    background-color: black;
+    color: white;
+
+}
+
+

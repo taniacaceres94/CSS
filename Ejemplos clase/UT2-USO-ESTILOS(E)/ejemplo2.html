@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #contenedor{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-image: url("../imagenes/fondo.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            
+            text-align: center;
+            color: pink;
+        }
+      
+
+        #top-izq{
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            color: pink;
+        }
+
+        #top-derecha{
+            position: absolute;
+            top: auto;
+            color: pink;
+
+        }
+
+        #bot-izq{
+            position: absolute;
+            top: 8px;
+            left:: 8px;
+            color: pink;
+
+        }
+
+        #bot-derecha{
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            color: pink;
+
+        }
+        #center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50px, -50px);
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <img src="../imagenes/fondo.jpg">
+        <div id ="top-izq"><p>Top left</p></div>
+        <div id ="bot-izq"><p>Bot left</p></div>
+        <div id ="center"><p>Center</p></div>
+        <div id ="top-derecha"><p>Top rigth</p></div>
+        <div id ="bot-derecja"><p>bot right</p></div> 
+    </div>
+</body>
+</html>
