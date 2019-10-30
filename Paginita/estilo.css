@@ -282,24 +282,35 @@ animation: cambio 25s infinite alternate linear;
 #cabecera3{
     padding-top: 500px;
     text-align: center;
+    width: 100%;
+    
+    
 }
 
-#fotis img{
-    width: 300px;
+
+#cabecera3 div{
+    width: 391px;
+    height: 590px;
+  
+    
+    
 }
 
-#fotis li{
-    margin-left: 0px;
+#cabecera3 #iz{
+    float: left;  
+    margin-left: 60px;
 }
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
+#cabecera3 #dc{
+    float: right;
+    margin-right: 60px;  
 }
+#cabecera3 #cen{
+    display: inline-block; 
+}
+
+
+
+
 
 .cabecera4{
     width: 1500px;
