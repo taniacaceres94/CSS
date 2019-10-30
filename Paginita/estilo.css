@@ -316,9 +316,14 @@ animation: cambio 25s infinite alternate linear;
     width: 1500px;
     bottom: 0px;
     margin-top: 250px;
+    text-align: center;
 }
 
 .cabecera4 img{
     width: 100%;
+}
+
+#cabecera4 h1{
+    font-size: 40%;
 }
 
