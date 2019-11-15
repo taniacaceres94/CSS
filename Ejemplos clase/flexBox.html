@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            background-color: green;
+            height: 400px;
+            display: flex;
+            /*
+            flex-direction: row; --> es el de por defecto
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+            flex-wrap: wrap; --> si metes mas divs, al cambiar el tamaño de la pagina
+            los divs de dentro se moverán
+            */
+
+            /*justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+            align-content: center;
+            */
+            /*
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            align-items: flex-end;*/
+         
+            
+            
+            align-items: center;
+            
+
+            
+        }
+
+        .item{
+            background-color: pink;
+            font-size: 30px;
+            margin: 10px;
+            padding: 20px;
+            /*flex-grow: 1;*/
+            flex-shrink: 1;
+        }
+       
+        #item3{
+             /*align-self: flex-start;*/
+             /*flex-grow: 3;*/
+             flex-shrink: 2;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="item">Prueba prueba 1</div>
+        <div class="item">Prueba prueba 2</div>
+        <div id ="item3" class="item">Prueba prueba 3</div>
+        
+    </div>
+</body>
+</html>
