@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .contenedor{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tarjeta{
+            background-color: tomato;
+            width: 200px;
+            height: 200px;
+            /*transition: width 2s, height 3s, background-color 5s;*/
+            transition: cubic-bezier(.12,.45,.81,1.52) 2s;
+        }
+
+        .tarjeta:hover{
+            background-color: green;
+            width: 300px;
+            height: 300px;
+        }
+
+
+        .contenedor2{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .bloque1{
+            width: 100px;
+            height: 100px;
+
+            background-color: tomato;
+            animation-name: animacion1;
+            animation-duration: 0.1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse; /*para que no vaya de golpe al principio*/
+        }
+
+        .bloque2{
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+            animation-name: animacion2;
+            animation-duration: 4s;
+        }
+
+        .bloque3{
+            width: 100px;
+            height: 100px;
+            animation-name: animacion3;
+            animation-duration: 4s;
+            position: relative;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animacion1 {
+            from{
+                background-color: tomato;
+            }
+            to{
+                background-color: yellow;
+            }
+        }
+
+        .bloque1:hover{
+            animation: 2s bote ease 1; 
+        }
+
+        @keyframes bote{
+            20%,
+            50%,
+            80%{
+                transform: translateY(0);
+            }
+
+            40%{
+                transform: translateY(-30px);
+            }
+
+            65%{
+                transform: translateY(-15px);
+            }
+        }
+
+
+        /*---*/
+        @keyframes animacion3 {
+            0%{
+                background-color: rebeccapurple;
+                bottom: 0px;
+            }
+            25%{
+                background-color: pink;
+                bottom: 200px;
+                right: 0px;
+            }
+            50%{
+                background-color: plum;
+                bottom: 200px;
+                height: 200px;
+            }
+
+            75%{
+                background-color: salmon;
+                bottom: 0px;
+                right: 200px;
+            }
+
+            100%{
+                background-color: slategray;
+                bottom: 0px;
+                right: 0px;
+            }
+        }
+
+        .bloque4{
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            
+        }
+
+        .bloque4 img:hover{
+            transform: scale(1.4);
+            transition: 2s;
+            
+        }
+
+        .bloque4 img{
+            transition: 2s;
+        }
+
+
+    </style>
+</head>
+<body>
+
+        <div class="contenedor">
+                <div class="tarjeta">
+                </div>
+        </div>
+
+        <div class="contenedor2">
+            <div class="bloque1"></div>
+            <div class="bloque2"></div>
+            <div class="bloque3"></div>
+            <div class="bloque4"><img src="https://picsum.photos/id/1020/600/400" alt=""></div>
+        </div>
+
+        
+</body>
+</html>
