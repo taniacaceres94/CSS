@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .containerPrincipal{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 350px; /*le da el alto*/
+            column-gap: 10px;
+        }
+
+        .container img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .container{
+            position: relative; /*posicion relativa porque vamos a poner ahora posiciones absolutas, porque si no lo hacemos el
+            //contenido se irá al primer relativo que encuentre*/
+        }
+
+        .texto{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            white-space: nowrap;
+        }
+
+
+        .capa1{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(0, 0, 0, 0.651);
+        }
+
+        .container:hover .capa1{
+            opacity: 1;
+        }
+
+        .capa2{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            overflow: hidden; /*esconde lo que sobra*/
+            transition: .5s ease;
+            background-color: rgba(0, 0, 0, 0.651);
+        }
+
+        .container:hover .capa2{
+            width: 100%;
+        }
+
+        .capa3{
+            position: absolute;
+            top: 0;
+            left: 0; /*donde empieza y donde acaba el efecto*/
+            height: 100%;
+            width: 0;
+            overflow: hidden; /*esconde lo que sobra*/
+            transition: .5s ease;
+            background-color: rgba(0, 0, 0, 0.651);
+        }
+
+        .container:hover .capa3{
+            width: 100%;
+        }
+
+        .capa4{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 0;
+            width: 100%;
+            overflow: hidden; /*esconde lo que sobra*/
+            transition: .5s ease;
+            background-color: rgba(0, 0, 0, 0.651);
+        }
+
+        .container:hover .capa4{
+            height: 100%;
+        }
+
+        .capa5{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 0;
+            width: 100%;
+            overflow: hidden; /*esconde lo que sobra*/
+            transition: .8s ease;
+            background-color: rgba(0, 0, 0, 0.651);
+        }
+
+        .container:hover .capa5{
+            height: 100%;
+            transform: rotate(360deg);
+        }
+
+        .capa6{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .8s ease;
+            background-color: rgba(0, 0, 0, 0.651);
+        }
+
+        .container:hover .capa6{
+            opacity: 1;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="containerPrincipal">
+        <div class="container">
+            <img src="https://picsum.photos/id/1038/600/400" alt="">
+            <div class= "capa1">
+                <div class="texto">Esto es un texto de prueba</div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://picsum.photos/id/250/600/400" alt="">
+            <div class= "capa2">
+                <div class="texto">Esto es un texto de prueba</div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://picsum.photos/id/1029/600/400" alt="">
+            <div class= "capa3">
+                <div class="texto">Esto es un texto de prueba</div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://picsum.photos/id/174/600/400" alt="">
+            <div class= "capa4">
+                <div class="texto">Esto es un texto de prueba</div>
+            </div>
+        </div>
+
+        <div class="container">
+                <img src="https://picsum.photos/id/174/600/400" alt="">
+                <div class= "capa5">
+                    <div class="texto">Esto es un texto de prueba</div>
+                </div>
+        </div>
+        <div class="container">
+            <img src="https://picsum.photos/id/174/600/400" alt="">
+                <div class= "capa6">
+                    <div class="texto">Esto es un texto de prueba</div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
