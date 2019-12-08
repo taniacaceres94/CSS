@@ -1,0 +1,179 @@
+html body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contenedorPrincipal{
+ 
+    width: 85%;
+    height: 100%;
+    background: #2f3238;
+}
+
+.cabecera{
+    display: flex;
+    width: auto;
+    height: 900px;
+}
+
+.cuadrado1{
+    position: absolute;
+    background-color: green;
+}
+.cabecera img{
+    max-width: none;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.cabecera .menu{
+    margin-top: 400px;
+    margin-left: 55px;
+    background-color: red;
+}
+
+/*Efectos:---------------*/
+.cabecera figcaption{
+    text-align: left;
+}
+.cabecera h2{
+    position: relative;
+	padding: 0.5em 1em;
+}
+
+/*aparecen las letras*/
+.cabecera p{
+    display: inline-block;
+	margin: 0 0 0.25em;
+	padding: 0.4em 1em;
+	background: rgba(255,255,255,0.9);
+	color: #2f3238;
+	text-transform: none;
+	font-weight: 500;
+	font-size: 75%;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-360px,0,0);
+	transform: translate3d(-360px,0,0);
+}
+/*la primera frase entra mas tarde*/
+.cabecera p:first-child{
+    -webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+.cabecera p:nth-last-of-type(2){
+    -webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+.cabecera p:nth-last-of-type(3){
+    -webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.cabecera p:nth-last-of-type(4){
+    -webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+.cabecera p:nth-last-of-type(5){
+    -webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+
+
+/*con :hover*/
+.cabecera:hover p:first-child{
+    -webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+.cabecera:hover p:nth-last-of-type(2){
+    -webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+.cabecera:hover p:nth-last-of-type(3){
+    -webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.cabecera:hover img{
+    opacity: 0.4;
+	-webkit-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+
+.cabecera:hover p{
+    opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/*BODY------------------*/
+.body1{
+    margin-top: 100px;
+    background-color: red;
+}
+
+.body1 .cuadrado2{
+    background-color: yellowgreen;
+}
+
+.body1 img{
+    width: 450px;
+    margin-top: 80px;
+    margin-left: 290px;
+}
+
+.texto1{
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    position: absolute;
+    margin-left: 650px;
+    margin-top: -500px;
+}
+
+/*---------*/
+
+.body2{
+    margin-top: 100px;
+    text-align: right;
+}
+
+.body2 .cuadrado2{
+    background-color: yellowgreen;
+}
+
+.body2 img{
+    text-align: right;
+    width: 450px;
+    margin-top: 80px;
+    margin-right: 290px;
+}
+
+.texto2{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -500px;
+}
+
+/*-----------*/
+
+.body3{
+    text-align: center;
+    margin-top: 200px;
+}
+.body3 img{
+    width: 70%;
+}
+
+/*PIE-----------------*/
+.pie{
+    height: 300px;
+}
