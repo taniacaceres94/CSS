@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .contenedor{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .ficha{
+            width: 300px;
+            border: black 2px solid;
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .parte{
+            display: flex;
+            flex-direction: column;
+            border-left: black 2px solid;
+        }
+
+        img{
+            width: 40%;
+        }
+        .cab{
+            background-color: cadetblue;
+            border: black 1px solid;
+        }
+
+        .cabecera{
+            background-color: black;
+            padding: 10px;
+            height: 60px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+  <div class="cabecera">Flexbox: Catálogo de imágenes y texto</div>
+            <div class="contenedor">
+                    <div class="ficha">
+                        <img src="https://picsum.photos/id/1003/600/400" alt="">
+                        <div class="parte">
+                                <div class="cab"><p class="p2">Building 1</p></div>
+                            <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maiores quisquam suscipit recusandae voluptatibus voluptatem quae nesciunt, ratione unde eius fugiat dolores impedit labore sit ipsa quo laborum laboriosam praesentium!</p>
+                        </div>
+                    </div>
+                    <div class="ficha">
+                            <img src="https://picsum.photos/id/684/600/400" alt="">
+                            <div class="parte">
+                                <div class="cab"><p class="p2">Building 1</p></div>
+                                <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maiores quisquam suscipit recusandae voluptatibus voluptatem quae nesciunt, ratione unde eius fugiat dolores impedit labore sit ipsa quo laborum laboriosam praesentium!</p>
+                            </div>
+                        </div>
+                        <div class="ficha">
+                                <img src="https://picsum.photos/id/431/600/400" alt="">
+                                <div class="parte">
+                                    <div class="cab"><p class="p2">Building 1</p></div>
+                                    <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maiores quisquam suscipit recusandae voluptatibus voluptatem quae nesciunt, ratione unde eius fugiat dolores impedit labore sit ipsa quo laborum laboriosam praesentium!</p>
+                                </div>
+                            </div>
+                            <div class="ficha">
+                                    <img src="https://picsum.photos/id/182/600/400" alt="">
+                                    <div class="parte">
+                                            <div class="cab"><p class="p2">Building 1</p></div>
+                                        <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maiores quisquam suscipit recusandae voluptatibus voluptatem quae nesciunt, ratione unde eius fugiat dolores impedit labore sit ipsa quo laborum laboriosam praesentium!</p>
+                                    </div>
+                                </div>
+                </div>
+  
+</body>
+</html>

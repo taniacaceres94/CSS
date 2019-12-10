@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        span.a{
+            display: inline; /*se coloca en horizontalm se adapta al hancho del contenido*/
+            background-color: red;
+            color: white;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+        }
+
+        span.b{
+            display: inline-block; /*como inline pero no ignora el width y el height*/
+            background-color: red;
+            color: white;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+        }
+
+        span.c{
+            display: block; /*se apila en vertical, ocupa todo el ancho posible de su etiqueta*/
+            background-color: red;
+            color: white;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+        }
+
+        /*con none hariamos desaparecer al elemento*/
+
+        
+    </style>
+</head>
+<body>
+    <p>Esto es un texto <span class="a">palabra1</span> sigue el texto <span class="a">palabra2</span> termina el texto</p>
+    <p>Esto es un texto <span class="b">palabra1</span><span class="b">palabra2</span> termina el texto</p>
+    <p>Esto es un texto <span class="c">palabra1</span><span class="c">palabra2</span> termina el texto</p>
+</body>
+</html>
