@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*
+            Posicion:
+            -relative: el desplazamiento de la caja se controla con "top, rigth, botttom, lefth".figura.
+                Si lo mueves de su sitio, deja un hueco vacío.
+            -absolute: posición según un contenedor que tenga position:relative, el primero que encuentre, si no hay, se basa 
+                en la ventana. 
+            -fixed: es igual que absolute, solo que se queda fijo al hacer scroll. 
+            -static: ignora las posiciones de top, lefth, rigth, botttom. 
+            -float: left: todas las  cajas se desplazan a la izq 
+            float: rigth: se desplazan a la derecha (estos son recomendados solo para rodear foto con texto)    
+        */
+        .figura1{
+            position: absolute;
+            border-radius: 200px 200px 200px 200px;
+            -moz-border-radius: 200px 200px 200px 200px;
+            -webkit-border-radius: 200px 200px 200px 200px;
+            background-color: yellowgreen;
+         
+            width: 300px;
+            height: 300px;
+            right:0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+     
+        }
+        .figura2{
+            position: absolute;
+            border-radius: 200px 200px 200px 200px;
+            -moz-border-radius: 200px 200px 200px 200px;
+            -webkit-border-radius: 200px 200px 200px 200px;
+            background-color: red;
+           
+            width: 300px;
+            height: 300px;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .figura3{
+            position: absolute;
+            border-radius: 200px 200px 200px 200px;
+            -moz-border-radius: 200px 200px 200px 200px;
+            -webkit-border-radius: 200px 200px 200px 200px;
+            background-color: blue;
+            
+            width: 300px;
+            height: 300px;
+            left: 0;
+        }
+
+        .figura4{
+            position: absolute;
+            border-radius: 200px 200px 200px 200px;
+            -moz-border-radius: 200px 200px 200px 200px;
+            -webkit-border-radius: 200px 200px 200px 200px;
+            background-color: yellow;
+            
+            width: 300px;
+            height: 300px;
+            left: 0;
+            bottom: 0;
+        }
+
+
+        .figura5{
+            position: absolute;
+            border-radius: 200px 200px 200px 200px;
+            -moz-border-radius: 200px 200px 200px 200px;
+            -webkit-border-radius: 200px 200px 200px 200px;
+            background-color: orange;
+            
+            width: 300px;
+            height: 300px;
+            right: 0;
+            bottom: 0;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="figura1"><p>Esto es un circulo</p></div>
+    <div class="figura2"><p>Esto es un circulo</p></div>
+    <div class="figura3"><p>Esto es un circulo</p></div>
+
+    <div class="figura4"><p>Esto es un circulo</p></div>
+    <div class="figura5"><p>Esto es un circulo</p></div>
+</body>
+</html>

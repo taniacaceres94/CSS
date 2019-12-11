@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 2fr 4fr 2fr;
+            grid-template-areas: "head head"
+                                 "body body2"
+                                  "foot foot";
+
+        }
+
+        .head{
+            grid-area: head;
+            background-color: pink;
+        }
+        .body{
+            grid-area: body;
+            background-color: red;
+        }
+        .body2{
+            grid-area: body2;
+            background-color: orchid;
+        }
+        .foot{
+            grid-area: foot;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="head">#1</div>
+        <div class="body">#2</div>
+        <div class="body2">#3</div>
+        <div class="foot">#4</div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 100px;
+           column-gap: 20px;
+           row-gap: 20px;
+        }
+
+        .dv1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .contenedor div{
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="dv1">#1</div>
+        <div class="dv2">#2</div>
+        <div class="dv3">#3</div>
+        <div class="dv4">#4</div>
+    </div>
+</body>
+</html>
