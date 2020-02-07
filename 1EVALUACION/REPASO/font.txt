@@ -1,0 +1,15 @@
+@font-face {
+  font-family: <un-nombre-de-fuente-remota>;
+  src: <origen> [,<origen>]*;
+  
+}
+
+/justify-content
+-alig-items
+-flex-direcction
+-flex-wrap
+alig-content
+
+
+grid-row-start
+grig-column-stara

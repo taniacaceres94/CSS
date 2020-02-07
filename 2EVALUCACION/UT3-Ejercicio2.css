@@ -1,0 +1,170 @@
+html,body{
+    height: 100%;
+    margin: 0; 
+    background-color: #6b6237;
+    background-image: url("imagenes/madera.png");
+   
+}
+.cuerpo{
+    width: 100%;
+    height: 100%;
+    /*background-image: url("imagenes/fondo1.jpg");*/
+    /*filter: blur(10px); */ 
+    display: flex;  
+    justify-content: center;
+    
+
+}
+
+.centro{
+    width: 80%;
+    height: 2600px;
+    background-color: white;
+    position: relative;
+    -webkit-box-shadow: 2px 2px 36px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 36px 5px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 36px 5px rgba(0,0,0,0.75);
+}
+
+.log{
+    position: absolute;
+
+    right: 50px;
+    bottom: 30px;
+    width: 90px;
+    height: 60px;
+
+    
+    
+}
+
+
+.img1{
+    width: 100%;
+    height: 100%;
+}
+
+
+.cabecera{
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+
+
+
+.body1{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.body2{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+
+
+}
+
+.body{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pie{
+
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #0D0C0B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texto{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.miniFotos1{
+    position: relative;
+
+    width: 390px;
+    height: 550px;
+    margin: 40px;
+
+    left: 170px;
+}
+
+.miniFotos1 img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.miniFotos2{
+    position: relative;
+
+    width: 390px;
+    height: 550px;
+    margin: 40px;
+
+    right: 170px;
+}
+
+.miniFotos2 img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.texto{
+    width: 400px;
+    height: 500px;
+
+}
+
+h1{
+    font-size: 70px;
+    color: #0D0C0B;
+}
+
+p{
+    font-size: 18px;
+}
+
+button{
+    background-color: white;
+ 
+  border: 2px solid #736938; 
+  padding: 20px;
+  color: #736938;
+  font-size: 15px;
+}
+
+.pie img{
+    width: 90px;
+    height: 60px;
+}
