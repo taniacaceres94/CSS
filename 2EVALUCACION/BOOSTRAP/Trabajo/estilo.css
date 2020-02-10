@@ -1,0 +1,267 @@
+html,body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.menu {
+    height: 60px;
+    background-color: #ffffff;
+
+
+}
+
+.principal {
+
+    padding: 0;
+    position: relative;
+}
+
+
+
+.principal img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+
+}
+
+.body1 {
+    height: 400px;
+
+}
+
+.info1 {
+    margin: 0px;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.info1 h1 {
+    margin: 20px;
+    font-size: 2vw;
+
+}
+
+.contenido {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.info1 p {
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* BODY 2*/
+
+.contenido2 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.contenido2 div {
+    width: 100%;
+}
+
+
+
+.info2 {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info2 img {
+    width: 100%;
+}
+
+.info2 p {
+    text-align: justify;
+    margin: 50px;
+}
+
+.contenidoMail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Contenido del mail*/
+.moreInfo {
+    width: 450px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.moreInfo div {
+    padding: 15px;
+    text-align: center;
+}
+
+/*Pie de página*/
+
+.pie {
+    height: 120px;
+    background-color: rgba(128, 128, 128, 0.144);
+}
+
+.tituloContenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloContenido h2 {
+    margin: 50px;
+}
+
+.cuadritos {
+    margin-bottom: 70px;
+
+}
+
+.icono {
+    font-size: 100px;
+    color: #302f2e;
+}
+
+.titulo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 50%;
+    color: #1D2C40;
+}
+
+/*redimensiona el tamaño del texto segun un porcentaje respecto al tamaño de la pagina, pj 10vw es el 10% de lo que
+mida la ventana en ese momento*/
+.titulo h1 {
+    font-size: 6vw;
+    margin: 10px;
+}
+
+.titulo p {
+    font-size: 2vw;
+    margin: 10px;
+}
+
+.buscador {
+    font-size: 2vw;
+    margin: 10px;
+}
+
+.buscador div {
+    font-size: 2vw;
+}
+
+.buscador a {
+    font-size: 1vw;
+}
+
+
+
+.linea {
+    width: 5px;
+    height: 400px;
+    background-color: #302f2ea6;
+}
+
+.info1linea {
+    padding: 0;
+
+    /*background-color: chartreuse;*/
+    display: flex;
+    justify-content: center;
+}
+
+.mailsito {
+    background-color: rgba(128, 128, 128, 0.144);
+    padding-top: 20px;
+}
+
+
+
+.redesSociales i {
+    margin: 8px;
+}
+
+#desplegablecillo {
+    color: #733934;
+    text-align: center;
+}
+
+
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #1D2C40;
+    border-radius: 30px;
+    padding: 10px;
+
+
+}
+
+.search_input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_input {
+    padding: 0 10px;
+    width: 200px;
+    caret-color: #733934;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_icon {
+    background: white;
+    color: #733934;
+}
+
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+/*###################SEGUNDA PAGINA*#################*/
+
+.secundaria{
+    height: 600px;
+    padding: 0;
+}
