@@ -2,6 +2,7 @@ html,body {
     margin: 0;
     height: 100%;
     width: 100%;
+    position: absolute;
     background-color: rgb(255, 255, 255);
 }
 
@@ -122,10 +123,7 @@ html,body {
 
 /*Pie de página*/
 
-.pie {
-    height: 120px;
-    background-color: rgba(128, 128, 128, 0.144);
-}
+
 
 .tituloContenido {
     display: flex;
@@ -199,6 +197,9 @@ mida la ventana en ese momento*/
 .mailsito {
     background-color: rgba(128, 128, 128, 0.144);
     padding-top: 20px;
+    position: relative;
+    bottom: 0;
+    
 }
 
 
@@ -261,7 +262,55 @@ mida la ventana en ese momento*/
 
 /*###################SEGUNDA PAGINA*#################*/
 
-.secundaria{
-    height: 600px;
-    padding: 0;
+.contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+  
+}
+
+
+
+.tablita{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    
+}
+
+.tablita table{
+    width: 900px;
+    height: 870px;
+    
+    text-align: center;
+}
+
+.tablita thead{
+    background-color: #1D2C40;
+    color: white;
+}
+
+.tablita i{
+    color: rgb(22, 187, 22);
+}
+
+.tablita .no{
+    color: rgb(255, 0, 0);
+}
+
+.fotis{
+    background-color: rgba(128, 128, 128, 0.144);
+    padding: 30px;
+}
+
+
+.fotosCirulares{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: red;
 }
