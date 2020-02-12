@@ -68,7 +68,11 @@ html,body {
     margin-right: 50px;
 }
 
-/* BODY 2*/
+/*CARROUSEL PAGINA-------*/
+.carrouselPagina{
+    background-color: #1D1D1D;
+    color: white;
+}
 
 .contenido2 {
     display: flex;
@@ -76,31 +80,29 @@ html,body {
     padding: 0;
 }
 
-.contenido2 div {
+/*.contenido2 div {
     width: 100%;
-}
-
-
-
+}*/
 .info2 {
     position: relative;
-
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    
 }
 
 .info2 img {
     width: 100%;
 }
 
-.info2 p {
+.info2 p , h1, button{
     text-align: justify;
-    margin: 50px;
+    margin-left: 40px;
+    margin-top: 20px;
 }
 
-.contenidoMail {
+.contenidoCajasPie { /*ver si puedo ponerlo con boostrap*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,8 +113,7 @@ html,body {
     width: 450px;
     height: 350px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   
     flex-direction: column;
 
 
@@ -196,7 +197,7 @@ mida la ventana en ese momento*/
     justify-content: center;
 }
 
-.mailsito {
+.piePagina {
     background-color: #1D1D1D;
     color: white;
     padding-top: 20px;
@@ -204,19 +205,16 @@ mida la ventana en ese momento*/
     bottom: 0;
     
 }
-
-
-
 .redesSociales i {
     margin: 8px;
 }
 
 #desplegablecillo {
-    color: #733934;
+    color: #969696;
     text-align: center;
 }
 
-
+/*BUSCADOR-------------*/
 .searchbar {
     margin-bottom: auto;
     margin-top: auto;
@@ -262,10 +260,11 @@ mida la ventana en ese momento*/
     color: white;
     text-decoration: none;
 }
-
+/*FIN BUSCADOR---------*/
+/*PIE DE LA PAGINA-------------*/
 .pie{
     background-color: #000000;
-    color: #1D1D1D;
+    color: rgb(68, 68, 68);
     height: 50px;
     bottom: 0;
     
@@ -281,6 +280,34 @@ mida la ventana en ese momento*/
  
     height: 310px;
 }
+
+.bb p{
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.bb hr{
+    background-color: rgba(179, 179, 179, 0.712);
+}
+
+.texto1{
+    color: rgb(148, 148, 148);
+}
+
+/*----CONTENIDO1 RELLENO--------*/
+.contenido1Relleno{
+    margin: 40px;
+}
+
+.rowRelleno{
+    margin: 20px;
+}
+
+.rowRelleno div{
+    margin-top: 20px;
+}
+
+
 
 /*###################SEGUNDA PAGINA*#################*/
 
@@ -310,10 +337,7 @@ mida la ventana en ese momento*/
     text-align: center;
 }
 
-.tablita thead{
-    background-color: #1D2C40;
-    color: white;
-}
+
 
 .tablita i{
     color: rgb(22, 187, 22);
