@@ -4,6 +4,8 @@ html,body {
     width: 100%;
     position: absolute;
     background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -118,7 +120,7 @@ html,body {
 
 .moreInfo div {
     padding: 15px;
-    text-align: center;
+    
 }
 
 /*Pie de página*/
@@ -195,7 +197,8 @@ mida la ventana en ese momento*/
 }
 
 .mailsito {
-    background-color: rgba(128, 128, 128, 0.144);
+    background-color: #1D1D1D;
+    color: white;
     padding-top: 20px;
     position: relative;
     bottom: 0;
@@ -258,6 +261,25 @@ mida la ventana en ese momento*/
     border-radius: 50%;
     color: white;
     text-decoration: none;
+}
+
+.pie{
+    background-color: #000000;
+    color: #1D1D1D;
+    height: 50px;
+    bottom: 0;
+    
+}
+
+
+.aa{
+    
+    height: 50px;
+}
+
+.bb{
+ 
+    height: 310px;
 }
 
 /*###################SEGUNDA PAGINA*#################*/
