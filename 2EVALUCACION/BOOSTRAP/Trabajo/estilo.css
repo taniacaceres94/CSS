@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html,body {
     margin: 0;
     height: 100%;
@@ -309,6 +314,8 @@ mida la ventana en ese momento*/
 
 
 
+
+
 /*###################SEGUNDA PAGINA*#################*/
 
 .contenido{
@@ -359,4 +366,9 @@ mida la ventana en ese momento*/
     justify-content: center;
     flex-direction: column;
     background-color: red;
+}
+
+.parrafoPie{
+
+    margin: 0;
 }
