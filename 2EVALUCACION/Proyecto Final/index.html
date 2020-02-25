@@ -14,31 +14,92 @@
   
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-       <!--JQUERY-->
-    <!--el código JQUERY siempre va dejabo de la librería.-->
-    <script src="../../JS/jquery-3.4.1.min.js"></script>
+       
   
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="estilo.css">
+        <!--JQUERY-->
+    <!--el código JQUERY siempre va dejabo de la librería.-->
+    <script src="../JS/jquery-3.4.1.min.js"></script>
 
       <script>
           $(document).ready(function(){
-              $('#btnCambiaImagen').click(function(){
-                $('#contenidoImagen').fadeOut(2000);
-              })
+
+            //creamos un contador para indicar la posición del array de imagenes
+            var i = 0;
+            //para evitar copiar todo el rato $('#contenidoImagen'), lo guardamos directamente en una variable más cortita
+            var idImagen =  $('#contenidoImagen');
+            //creamos un array que contendrá todas las imágenes que queramos mostrar
+            var arrayImagenes =[
+            '<img id="contenidoImagen" src="img/foti1.png">',
+            '<img id="contenidoImagen" src="img/foto1.png">'
+            
+            ];
+
+
+            //función que nos irá pasando las imágenes del array cada 4 segundos
+              setInterval(function(){
+                  //se desvanecerá en un intervalo de 2 seg y cuando haga esto se ejecutará una función:
+                idImagen.fadeOut(2000, function(){
+                    //incrementamos en 1 el contador de posición de array
+                   i++;
+                   if(i === arrayImagenes.length){ //si el contador es igual a la longitud del array, quiere decir que hemos recorrido
+                   //todo el array, por lo que lo pondremos a 0
+                       i = 0;
+                   }
+                   //reemplazamos la imagen anterior por la siguiente ayudándonos con el array y la posición: ME LO HACE FEO SIN DESVANECER
+                    $('#contenidoImagen').replaceWith(arrayImagenes[i]);
+                    //$(this).css('#contenidoImagen', arrayImagenes[i]);
+                    
+                });
+                idImagen.fadeIn(1000);
+                
+              },4000)
           })
       </script>
 </head>
 <body>
     <div class="container col-12">
-        <div class="row menu"></div>
+        <div class="row menu">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand text-black-50" href="#"><i class="fab fa-connectdevelop"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menucillo">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menucillo">
+                    <ul class="navbar-nav ">
+                        <li class="nav-iem active">
+                            <a class="nav-link text-black-50" href="index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-iem ">
+                            <a class="nav-link text-black-50" href="#">Nuestros servicios</a>
+                        </li>
+
+                        <li class="nav-iem ">
+                            <a class="nav-link text-black-50" href="formulario.html">Trabaja con nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <div class="row cuerpo">
-            <div class="col-6 divIzq">
-                <button id="btnCambiaImagen">Siguiente</button>
+            <div class="col-4 divIzq d-flex justify-content-center align-items-start flex-column">
+             
+                    <div class="tituloPagina">
+                        <h1>FERIA</h1>
+                        <h1>INTERNACIONAL</h1>
+                        <h1>DE ARTE</h1>
+                        <h1>CONTEMPORANEO</h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repudiandae corrupti quod ducimus incidunt, vero tempora porro?</p>
+                    <button id="btnCambiaImagen">Ver más</button>
+               
+                
             </div>
-            <div class="col-6 divDere d-flex justify-content-center"><img id="contenidoImagen" src="img/fotoedit1.png"></div>
+            <div class="col-8 divDere d-flex justify-content-center"><img id="contenidoImagen" src="img/foti1.png"></div>
         </div>
         <div class="pie"></div>
     </div>
