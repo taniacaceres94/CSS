@@ -57,51 +57,60 @@
                 idImagen.fadeIn(1000);
                 
               },4000)
+
+              /*-----Menú desplegable--*/
+              $('.menu-burguer').click(function(){
+                  $('.menu-burguer').toggleClass('is-active');
+                  $('.menuDesplegable').toggleClass('is-active');
+              })
+
           })
       </script>
 </head>
 <body>
-    <div class="container col-12">
-        <div class="row menu">
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="navbar-brand text-black-50" href="#"><i class="fab fa-connectdevelop"></i></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menucillo">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menucillo">
-                    <ul class="navbar-nav ">
-                        <li class="nav-iem active">
-                            <a class="nav-link text-black-50" href="index.html">Inicio</a>
+    <div class="container-fluid">
+        <div class="col-12 cuerpoTodo ">
+            <!--<div class="row menu">-->
+                <div class="menu-burguer">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+                <nav class="menuDesplegable">
+                    <ul>
+                        <li>
+                            <a href="#">Opcion 1</a>
                         </li>
-
-                        <li class="nav-iem ">
-                            <a class="nav-link text-black-50" href="#">Nuestros servicios</a>
+                        <li>
+                            <a href="#">Opcion 2</a>
                         </li>
-
-                        <li class="nav-iem ">
-                            <a class="nav-link text-black-50" href="formulario.html">Trabaja con nosotros</a>
+                        <li>
+                            <a href="#">Opcion 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Opcion 4</a>
                         </li>
                     </ul>
+                </nav>
+            <!--</div>-->
+            <div class="row cuerpo">
+                <div class="col-4 divIzq d-flex justify-content-center align-items-start flex-column">
+                 
+                        <div class="tituloPagina">
+                            <h1>FERIA</h1>
+                            <h1>INTERNACIONAL</h1>
+                            <h1>DE ARTE</h1>
+                            <h1>CONTEMPORANEO</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repudiandae corrupti quod ducimus incidunt, vero tempora porro?</p>
+                        <button id="btnCambiaImagen">Ver más</button>
+                   
+                    
                 </div>
-            </nav>
-        </div>
-        <div class="row cuerpo">
-            <div class="col-4 divIzq d-flex justify-content-center align-items-start flex-column">
-             
-                    <div class="tituloPagina">
-                        <h1>FERIA</h1>
-                        <h1>INTERNACIONAL</h1>
-                        <h1>DE ARTE</h1>
-                        <h1>CONTEMPORANEO</h1>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repudiandae corrupti quod ducimus incidunt, vero tempora porro?</p>
-                    <button id="btnCambiaImagen">Ver más</button>
-               
-                
+                <div class="col-8 divDere d-flex justify-content-center"><!--<img id="contenidoImagen" src="img/foti1.png">--></div>
             </div>
-            <div class="col-8 divDere d-flex justify-content-center"><img id="contenidoImagen" src="img/foti1.png"></div>
         </div>
-        <div class="pie"></div>
+        <!--<div class="pie"></div>-->
     </div>
 </body>
 </html>
