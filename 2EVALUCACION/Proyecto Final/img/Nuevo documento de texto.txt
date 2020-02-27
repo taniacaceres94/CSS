@@ -1,0 +1,46 @@
+   /* i++;
+                  if(i === arrayImagenes.length){ //si el contador es igual a la longitud del array, quiere decir que hemos recorrido
+                   //todo el array, por lo que lo pondremos a 0
+                       i = 0;
+                   }
+                  //$("body").css("background-image", "url('img/fotoeditada3_2.png')");
+                  //$("body").css("background-color", "white");
+                  //$("body").css("background-image", "url('')");
+                  
+                 
+                   setTimeout(ejecutar1, 300);
+                   setTimeout(ejecutar2, 800);
+                   setTimeout(ejecutar3, 1300);
+                   setTimeout(ejecutar4, 1800);
+                   setTimeout(ejecutar5, 2300);
+                   setTimeout(ejecutar6, 2800);
+                   setTimeout(ejecutar7, 3300);
+                   setTimeout(ejecutar8, 3800);
+                
+                   function ejecutar1(){
+                    $("body").css("background-image", "url("+arrayImagenes[i]+"copia1.png)"); //cambiamos el fondo
+                   }
+                   function ejecutar2(){
+                    $("body").css("background-image", "url("+arrayImagenes[i]+"copia2.png)"); //cambiamos el fondo
+                   }
+                   function ejecutar3(){
+                    $("body").css("background-image", "url("+arrayImagenes[i]+"copia3.png)"); //cambiamos el fondo
+                   }
+
+                   function ejecutar4(){
+                    $("body").css("background-image", "url(img/blanco.png)"); //cambiamos el fondo
+                   }
+
+                   function ejecutar5(){
+                        $("body").css("background-image", "url("+arrayImagenes[i]+"copia3.png)"); //cambiamos el fondo
+                   }
+
+                   function ejecutar6(){
+                    $("body").css("background-image", "url("+arrayImagenes[i]+"copia2.png)"); //cambiamos el fondo
+                   }
+                   function ejecutar7(){
+                    $("body").css("background-image", "url("+arrayImagenes[i]+"copia1.png)"); //cambiamos el fondo
+                   }
+                   function ejecutar8(){
+                        $("body").css("background-image", "url("+arrayImagenes[i]+".png)"); //cambiamos el fondo
+                   }*/

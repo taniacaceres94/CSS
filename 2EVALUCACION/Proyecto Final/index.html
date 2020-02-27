@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
       <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
       <!--<link rel="stylesheet" href="css/solid.css">
       <link rel="stylesheet" href="css/fontawesome.css">
@@ -24,77 +25,38 @@
     <!--el código JQUERY siempre va dejabo de la librería.-->
     <script src="../JS/jquery-3.4.1.min.js"></script>
 
-      <script>
-          $(document).ready(function(){
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-            //creamos un contador para indicar la posición del array de imagenes
-            var i = 0;
-            //para evitar copiar todo el rato $('#contenidoImagen'), lo guardamos directamente en una variable más cortita
-            var idImagen =  $('#contenidoImagen');
-            //creamos un array que contendrá todas las imágenes que queramos mostrar
-            var arrayImagenes =[
-            '<img id="contenidoImagen" src="img/foti1.png">',
-            '<img id="contenidoImagen" src="img/foto1.png">'
-            
-            ];
-
-
-            //función que nos irá pasando las imágenes del array cada 4 segundos
-              setInterval(function(){
-                  //se desvanecerá en un intervalo de 2 seg y cuando haga esto se ejecutará una función:
-                idImagen.fadeOut(2000, function(){
-                    //incrementamos en 1 el contador de posición de array
-                   i++;
-                   if(i === arrayImagenes.length){ //si el contador es igual a la longitud del array, quiere decir que hemos recorrido
-                   //todo el array, por lo que lo pondremos a 0
-                       i = 0;
-                   }
-                   //reemplazamos la imagen anterior por la siguiente ayudándonos con el array y la posición: ME LO HACE FEO SIN DESVANECER
-                    $('#contenidoImagen').replaceWith(arrayImagenes[i]);
-                    //$(this).css('#contenidoImagen', arrayImagenes[i]);
-                    
-                });
-                idImagen.fadeIn(1000);
-                
-              },4000)
-
-              /*-----Menú desplegable--*/
-              $('.menu-burguer').click(function(){
-                  $('.menu-burguer').toggleClass('is-active');
-                  $('.menuDesplegable').toggleClass('is-active');
-              })
-
-          })
-      </script>
 </head>
 <body>
     <div class="container-fluid">
         <div class="col-12 cuerpoTodo ">
-            <!--<div class="row menu">-->
-                <div class="menu-burguer">
-                    <div class="menu-line"></div>
-                    <div class="menu-line"></div>
-                    <div class="menu-line"></div>
-                </div>
-                <nav class="menuDesplegable">
-                    <ul>
-                        <li>
-                            <a href="#">Opcion 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Opcion 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Opcion 3</a>
-                        </li>
-                        <li>
-                            <a href="#">Opcion 4</a>
-                        </li>
-                    </ul>
-                </nav>
-            <!--</div>-->
+            <!--Menu-->
+            <div class="hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+            </div>
+            <nav class="menuppal">
+                <ul>
+                    <li>
+                        <a href="#">EVENTOS</a>
+                    </li>
+                    <li>
+                        <a href="explorar.html">EXPLORAR</a>
+                    </li>
+                    <li>
+                        <a href="#">VISITA</a>
+                    </li>
+                    <li>
+                        <a href="#">TIKETS</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!---->
             <div class="row cuerpo">
-                <div class="col-4 divIzq d-flex justify-content-center align-items-start flex-column">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12  d-flex justify-content-center align-items-start flex-column divIzq">
                  
                         <div class="tituloPagina">
                             <h1>FERIA</h1>
@@ -102,15 +64,29 @@
                             <h1>DE ARTE</h1>
                             <h1>CONTEMPORANEO</h1>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repudiandae corrupti quod ducimus incidunt, vero tempora porro?</p>
+                        <div class="textoTitulo">
+                            <p>Lorem ipsum dolor, adipisicing elit. Architecto  aliquid. Quia mollitia dolorem. Facilis corrupti reiciendis labore inventore hic sint! Eaque dolor, iusto minima neque molestiae ratione quam ipsam non tempore eos repellendus culpa sapiente iure recusandae!</p>
+                        </div>
                         <button id="btnCambiaImagen">Ver más</button>
-                   
+
+                        <div class="informacionImg d-block d-sm-none">
+                            <img id="miniImg" src="img/fotoMini1.jpg">
+                            <h2>Nombre obra</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, illum?</p>
+                        </div>
                     
                 </div>
-                <div class="col-8 divDere d-flex justify-content-center"><!--<img id="contenidoImagen" src="img/foti1.png">--></div>
+                <div class="col-8 d-none d-md-block d-xl-block justify-content-center divDere">
+                    <!--<div class="informacionImg">
+                            <img id="miniImg" src="img/fotoMini1.jpg">
+                            <h2>Nombre obra</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, illum?</p>
+                    </div>-->
+                </div>
             </div>
         </div>
         <!--<div class="pie"></div>-->
     </div>
+    <script src="funciones.js"></script>
 </body>
 </html>
