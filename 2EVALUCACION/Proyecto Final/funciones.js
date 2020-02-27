@@ -70,6 +70,29 @@ $(document).ready(function(){
         $("body").css("background-image", "url(img/concrete-wall.png)");
     })
 
-      
+      /*---------PÁGINA 2------------*/
+      var cantidad = $('.divPadre').scrollLeft();
+      $('#prueba').mouseover(function(){
+        
+        if($('.divPadre').scrollLeft() < 2000){
+          cantidad = cantidad+550;
+          //$('.divPadre').scrollLeft(cantidad)
+          $('.divPadre').animate({
+            scrollLeft: cantidad
+          }, 1000)
+        }
+      })
+
+      $('#prueba2').mouseover(function(){
+        
+        if($('.divPadre').scrollLeft() > 0){
+          cantidad = cantidad-550;
+          //$('.divPadre').scrollLeft(cantidad)
+          $('.divPadre').animate({
+            scrollLeft: cantidad
+          }, 1000)
+        }
+      })
+     
 
   })
