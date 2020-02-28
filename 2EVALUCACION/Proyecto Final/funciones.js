@@ -93,6 +93,10 @@ $(document).ready(function(){
           }, 1000)
         }
       })
+
+      /*---Sacar principio y final de la página---*/
+      var rigthPagina = $(window).offset().right;
+      console.log(rigthPagina)
      
 
   })

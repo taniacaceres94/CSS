@@ -214,7 +214,7 @@ box-shadow: 10px 10px 20px 5px rgba(0,0,0,0.75);
 .divPadre{
   top: 100px;
   display: flex;
-  background-color: pink;
+  /*background-color: pink;*/
   opacity: 0.9;
   align-items: center;
   position: relative;
@@ -230,7 +230,7 @@ box-shadow: 10px 10px 20px 5px rgba(0,0,0,0.75);
   height: auto;
   padding: 10px;
   white-space: nowrap;
-  background-color: yellowgreen;
+  /*background-color: yellowgreen;*/
 }
 .cajaScroll{
   /*background-color: blue;/*
