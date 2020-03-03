@@ -21,6 +21,8 @@
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="estilo.css">
+      <!--Fuentes-->
+      <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
         <!--JQUERY-->
     <!--el código JQUERY siempre va dejabo de la librería.-->
     <script src="../JS/jquery-3.4.1.min.js"></script>
@@ -28,7 +30,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 </head>
-<body>
+<body class="pagina1">
+    <!-- Carga de página -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+  <!----->
     <div class="container-fluid">
         <div class="col-12 cuerpoTodo ">
             <!--Menu-->
@@ -40,17 +47,15 @@
             <nav class="menuppal">
                 <ul>
                     <li>
-                        <a href="#">EVENTOS</a>
+                        <a href="index.html">INICIO</a>
                     </li>
                     <li>
-                        <a href="explorar.html">EXPLORAR</a>
+                        <a href="explorar.html">GALERÍA</a>
                     </li>
                     <li>
-                        <a href="#">VISITA</a>
+                        <a href="entradas.html">ENTRADAS</a>
                     </li>
-                    <li>
-                        <a href="#">TIKETS</a>
-                    </li>
+                   
                 </ul>
             </nav>
 
@@ -58,23 +63,18 @@
             <div class="row cuerpo">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12  d-flex justify-content-center align-items-start flex-column divIzq">
                  
-                        <div class="tituloPagina">
-                            <h1>FERIA</h1>
-                            <h1>INTERNACIONAL</h1>
-                            <h1>DE ARTE</h1>
-                            <h1>CONTEMPORANEO</h1>
-                        </div>
-                        <div class="textoTitulo">
-                            <p>Lorem ipsum dolor, adipisicing elit. Architecto  aliquid. Quia mollitia dolorem. Facilis corrupti reiciendis labore inventore hic sint! Eaque dolor, iusto minima neque molestiae ratione quam ipsam non tempore eos repellendus culpa sapiente iure recusandae!</p>
-                        </div>
-                        <button id="btnCambiaImagen">Ver más</button>
-
-                        <div class="informacionImg d-block d-sm-none">
-                            <img id="miniImg" src="img/fotoMini1.jpg">
-                            <h2>Nombre obra</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, illum?</p>
-                        </div>
-                    
+                       <div class="divPrincipalTitulo">
+                            <div class="tituloPagina">
+                                <h1>FERIA</h1>
+                                <h1>INTERNACIONAL</h1>
+                                <h1>DE ARTE</h1>
+                                <h1>CONTEMPORANEO</h1>
+                            </div>
+                            <div class="textoTitulo">
+                                <p>Lorem ipsum dolor, adipisicing elit. Architecto labore inventor minima neque molestiae ratione quam ipsam non tempore eos repellendus culpa sapiente iure recusandae!</p>
+                            </div>
+                            <!--<button id="btnCambiaImagen">Ver más</button> -->
+                       </div> 
                 </div>
                 <div class="col-8 d-none d-md-block d-xl-block justify-content-center divDere">
                     <!--<div class="informacionImg">

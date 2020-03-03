@@ -1,59 +1,40 @@
 $(document).ready(function(){
 
-    //creamos un contador para indicar la posición del array de imagenes
-    /*var i = 0;
-    //para evitar copiar todo el rato $('#contenidoImagen'), lo guardamos directamente en una variable más cortita
-    var idImagen =  $('#contenidoImagen');
-    //creamos un array que contendrá todas las imágenes que queramos mostrar
-    var arrayImagenes =[
-    '<img id="contenidoImagen" src="img/foti1.png">',
-    '<img id="contenidoImagen" src="img/foto1.png">'
-    
-    ];
+      /*----------------------Cambiar background cada 4 seg------------------------------------*/
 
+      //cambiar la imagen de fondo  SOLO SI ES MAYOR DE 640PX, si es menor no cambia
+      /*Sacamos el ancho de la ventana:*/
+       var ventana_ancho = $(window).width();
+       /*####DUDA PARA MARÍA####
+        me funciona pero no, si es menor de 640 no cambia de imagen si cargamos la ventana ya siendo pequeña, como la carguemos siendo
+        grande me dice que me peine. Me lo hace a la inversa también.
+       */
+       console.log(ventana_ancho)
+       if(ventana_ancho >= 640){
+           //creamos un contador para indicar la posición del array de imagenes
+          var i = 0;
+          //creamos un array que contendrá todas las imágenes que queramos mostrar
+          var arrayImagenes =[
+            'img/pic2.png',
+            'img/pic1.png',
+            'img/pic3.png'
+          ];
 
-    //función que nos irá pasando las imágenes del array cada 4 segundos
-      setInterval(function(){
-          //se desvanecerá en un intervalo de 2 seg y cuando haga esto se ejecutará una función:
-        idImagen.fadeOut(2000, function(){
-            //incrementamos en 1 el contador de posición de array
-           i++;
-           if(i === arrayImagenes.length){ //si el contador es igual a la longitud del array, quiere decir que hemos recorrido
-           //todo el array, por lo que lo pondremos a 0
-               i = 0;
-           }
-           //reemplazamos la imagen anterior por la siguiente ayudándonos con el array y la posición: ME LO HACE FEO SIN DESVANECER
-            $('#contenidoImagen').replaceWith(arrayImagenes[i]);
-            //$(this).css('#contenidoImagen', arrayImagenes[i]);
+          //Hacemos una función 'setInterval' que nos permitirá ejecutar algo en un tiempo x.
+          setInterval(function(){
+            i++;
+            if(i === arrayImagenes.length){ //si el contador es igual a la longitud del array, quiere decir que hemos recorrido
+             //todo el array, por lo que lo pondremos a 0
+                 i = 0;
+             }
             
-        });
-        idImagen.fadeIn(1000);
-        
-      },4000)*/
+            $(".pagina1").css("background-image", "url("+arrayImagenes[i]+")"); //cambiamos el fondo cada 4 segundos
+      
+        }, 4000)
 
-      /*Cambiar fondo mediante boton*/
-      //creamos un contador para indicar la posición del array de imagenes
-    var i = 0;
-    //para evitar copiar todo el rato $('#contenidoImagen'), lo guardamos directamente en una variable más cortita
-    var idImagen =  $('#contenidoImagen');
-    //creamos un array que contendrá todas las imágenes que queramos mostrar
-    var arrayImagenes =[
-    'img/pic2.png',
-    'img/pic3.png',
-    'img/pic1.png'
-    
-    ];
-      $('#btnCambiaImagen').click(function(){
-          i++;
-          if(i === arrayImagenes.length){ //si el contador es igual a la longitud del array, quiere decir que hemos recorrido
-           //todo el array, por lo que lo pondremos a 0
-               i = 0;
-           }
-          //$("body").css("background-image", "url('img/fotoeditada3_2.png')");
-          $("body").css("background-image", "url("+arrayImagenes[i]+")"); //cambiamos el fondo
-          /*A su vez vamos a modificar también el cuadro pequeño que contiene la fotografía para que cambie también esta*/
-          //$('#miniImg').replaceWith('<img id="miniImg" src='+arrayImagenes[i]+'>');
-      })
+       }
+     
+      
 
       /*-----Menú desplegable--*/
      
@@ -64,13 +45,24 @@ $(document).ready(function(){
         });
 
 
-    /*Botones para cambiar de página*/
+    /*------------------------Cambiar el fondo de las diferentes ventanas--------------------------------*/
+    //Cuando seleccionemos la página "Galería" nos cambiará el background
     $('#paginaExplorar').on("click", function(){
         $("body").css("background-color", "white");
         $("body").css("background-image", "url(img/concrete-wall.png)");
     })
 
-      /*---------PÁGINA 2------------*/
+  
+
+    /*--------loading------*/
+    $(window).on('load', function() { // makes sure the whole site is loaded 
+      $('#status').fadeOut(); // will first fade out the loading animation 
+      $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+      $('body').delay(350).css({'overflow':'visible'});
+    })
+    /*----------------------*/
+
+      /*---------#####################################PÁGINA 2###########################################------------*/
       var cantidad = $('.divPadre').scrollLeft();
       $('#prueba').mouseover(function(){
         
@@ -95,8 +87,8 @@ $(document).ready(function(){
       })
 
       /*---Sacar principio y final de la página---*/
-      var rigthPagina = $(window).offset().right;
-      console.log(rigthPagina)
+      /*var rigthPagina = $(window).offset().right;
+      console.log(rigthPagina)*/
      
 
   })

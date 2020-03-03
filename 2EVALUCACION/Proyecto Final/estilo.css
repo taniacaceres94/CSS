@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 html,body{
     /*background-color: rgb(12, 12, 12);*/
     background-color: initial;
-    background-image: url("img/pic1.png");
+    /*background-image: url("img/pic1.png");*/
     transition: all 1.5s ease-in-out; /*transiccion al cambiar de imagen de fondo*/
-   
+    overflow: hidden;
     background-repeat: no-repeat;
  
     height: 100%;
@@ -17,6 +18,15 @@ html,body{
     padding: 0;
     margin: 0;
     /*animation: animacion 5s linear ;*/
+}
+
+.pagina1{
+  background-image: url("img/pic1.png");
+}
+
+.pagina3{
+  background-image: url("img/fondopagina3.png");
+  background-size: cover;
 }
 
 /*@keyframes animacion{
@@ -50,7 +60,7 @@ body {
       
 }
 ._layer {
-  background: #000000;
+  background: #474747;
   margin-bottom: 4px;
   border-radius: 2px;
   width: 28px;
@@ -116,7 +126,7 @@ body {
 
 .menuppal ul li a {
   text-decoration: none;
-  color: black;
+  color: #474747;
 }
 
 
@@ -151,17 +161,27 @@ body {
 .tituloPagina{
    text-align: left;
 }
+.tituloPagina h1{
+  margin: 4px;
+  font-size: 50px;
+}
 
 .textoTitulo{
   margin-top: 20px;
   padding-right: 10px;
-
+  font-size: 15px;
   width: 450px;
 }
 
 .textoTitulo p{
+  font-family: 'Old Standard TT', serif;
  padding-right: 50px;
+ padding-left: 10px;
  text-align: justify;
+}
+
+.divPrincipalTitulo{
+  padding-left: 50px;
 }
 
 #btnCambiaImagen{
@@ -212,6 +232,7 @@ box-shadow: 10px 10px 20px 5px rgba(0,0,0,0.75);
 }
 /*--------------PÁGINA 2---------------*/
 .divPadre{
+ 
   top: 100px;
   display: flex;
   /*background-color: pink;*/
@@ -245,9 +266,9 @@ box-shadow: 10px 10px 20px 5px rgba(0,0,0,0.75);
   width: 400px;
   height: 500px; 
 
-  -webkit-box-shadow: 10px 11px 20px -4px rgba(0,0,0,0.6);
--moz-box-shadow: 10px 11px 20px -4px rgba(0,0,0,0.6);
-box-shadow: 10px 11px 20px -4px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 10px 14px 26px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 14px 26px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 14px 26px 0px rgba(0,0,0,0.75);
 }
 /*Cambiamos las medidas de las imágenes según el tamaño de la ventana*/
 /*Pantalla pequeña*/
@@ -412,4 +433,66 @@ box-shadow: 10px 11px 20px -4px rgba(0,0,0,0.6);
   position: absolute;
   right: 0px;
   z-index: 1;
+}
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+
+
+/*--###########---PÁGINA 3---##############*/
+.divIzqPag3{
+
+
+}
+.divDerePag3{
+
+}
+
+.cartel1{
+  margin-top: 70px;
+  width: 450px;
+  height: 570px;
+}
+
+.cartel1 img{
+  width: 100%;
+  height: 100%;
+}
+
+.cartel2{
+  margin-top: 70px;
+  width: 450px;
+  height: 570px;
+}
+
+.cartel2 img{
+  width: 100%;
+  height: 100%;
 }
