@@ -24,10 +24,6 @@ html,body{
   background-image: url("img/pic1.png");
 }
 
-.pagina3{
-  background-image: url("img/fondopagina3.png");
-  background-size: cover;
-}
 
 /*@keyframes animacion{
   0%{background-: 0; animation-timing-function: ease-in;}
@@ -467,6 +463,13 @@ box-shadow: 10px 11px 20px -4px rgba(0,0,0,0.6);
 
 
 /*--###########---PÁGINA 3---##############*/
+.pagina3{
+  background-image: url("img/backgroundfrida2.png");
+  background-size: cover;
+
+  
+}
+
 .divIzqPag3{
 
 
@@ -477,8 +480,10 @@ box-shadow: 10px 11px 20px -4px rgba(0,0,0,0.6);
 
 .cartel1{
   margin-top: 70px;
-  width: 450px;
-  height: 570px;
+  width: 800px;
+  height: 550px;
+background-image: url("IMG/tituloFrida1.png");
+
 }
 
 .cartel1 img{
@@ -490,6 +495,11 @@ box-shadow: 10px 11px 20px -4px rgba(0,0,0,0.6);
   margin-top: 70px;
   width: 450px;
   height: 570px;
+  -webkit-box-shadow: 15px 11px 42px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: 15px 11px 42px 6px rgba(0,0,0,0.75);
+box-shadow: 15px 11px 42px 6px rgba(0,0,0,0.75);
+
+
 }
 
 .cartel2 img{

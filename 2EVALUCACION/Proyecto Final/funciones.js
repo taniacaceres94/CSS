@@ -90,5 +90,24 @@ $(document).ready(function(){
       /*var rigthPagina = $(window).offset().right;
       console.log(rigthPagina)*/
      
+      /*-----------------########## PÁGINA 3 ##########----------------*/
+
+      /*Función que al hacer click en el botón nos va a cambiar el fondo de patalla y los elementos de la ventana*/
+      var y = 0;
+      var arrayFondoPaginas =[
+        'img/pic2.png',
+         'img/pic1.png',
+          'img/pic3.png'
+      ];
+      $('#siguienteEvento').click(function(){
+        i++;
+        if(i === arrayImagenes.length){ //si el contador es igual a la longitud del array, quiere decir que hemos recorrido
+         //todo el array, por lo que lo pondremos a 0
+             i = 0;
+         }
+        
+        $(".pagina3").css("background-image", "url("+arrayImagenes[i]+")"); //cambiamos el fondo
+  
+      })
 
   })
