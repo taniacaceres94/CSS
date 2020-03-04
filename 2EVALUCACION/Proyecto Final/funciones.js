@@ -92,22 +92,44 @@ $(document).ready(function(){
      
       /*-----------------########## PÁGINA 3 ##########----------------*/
 
-      /*Función que al hacer click en el botón nos va a cambiar el fondo de patalla y los elementos de la ventana*/
-      var y = 0;
-      var arrayFondoPaginas =[
-        'img/pic2.png',
-         'img/pic1.png',
-          'img/pic3.png'
-      ];
-      $('#siguienteEvento').click(function(){
-        i++;
-        if(i === arrayImagenes.length){ //si el contador es igual a la longitud del array, quiere decir que hemos recorrido
-         //todo el array, por lo que lo pondremos a 0
-             i = 0;
-         }
-        
-        $(".pagina3").css("background-image", "url("+arrayImagenes[i]+")"); //cambiamos el fondo
-  
+      /*Al hacer click en una de las imagenes nos ocultará la no seleccionada y en cambio aparecerá información acerca del evento,
+      también cambia el fondo respecto al pintor*/
+
+      $('#cartel1').click(function(){
+
+        $('#cartel2').animate({right:"-1000px"}, 500);
+        //$('#cartel1Oculto').animate({right:"490"}, 500);
+       
+        setInterval(function(){
+          $('#imgFridaInfo').attr("src", "img/infoVan.png");
+          $('#cartel2').animate({right:"0px"}, 500);
+        },1000)
+      })
+
+      $('#cartel2').click(function(){
+
+        /*Primero comprobamos que si el cartel 2 , que es el que voy a pulsar, tiene la imagen
+        de la info, primero se le cambia dicha imagen y luego se la cambia al otro div, y esto mismo
+        para el otro div*/
+        var imagenActual = $('#imgFridaInfo').attr("src"); //capturamos la img actual
+        console.log(imagenActual)
+
+        if(imagenActual === "img/infoFrida.png"){ //si contiene la img info:
+          alert(pasa)
+          $('#cartel2').animate({right:"-1000px"}, 500);
+          setInterval(function(){
+            $('#imgFridaInfo').attr("src", "img/fridaeditada.png");
+            $('#cartel2').animate({right:"0px"}, 500);
+          },500)
+        }else{
+          $('#cartel1').animate({left:"-1000px"}, 500);
+        //$('#cartel1Oculto').animate({right:"490"}, 500);
+       
+        setInterval(function(){
+          $('#imgVanInfo').attr("src", "img/infoFrida.png");
+          $('#cartel1').animate({left:"0px"}, 500);
+        },1000)
+        }
       })
 
   })

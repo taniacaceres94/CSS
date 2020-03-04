@@ -134,6 +134,7 @@ body {
 }
 
 .cuerpo{
+
     width: 100%;
     height: 90%;
     margin: 0;
@@ -464,7 +465,7 @@ box-shadow: 10px 11px 20px -4px rgba(0,0,0,0.6);
 
 /*--###########---PÁGINA 3---##############*/
 .pagina3{
-  background-image: url("img/fridaKaloexpo.png");
+  background-image: url('img/fondoFridaVan.jpg');
   background-size: cover;
   
 }
@@ -506,15 +507,18 @@ box-shadow: 10px 11px 20px -4px rgba(0,0,0,0.6);
 
 }
 .divDerePag3{
-
+position: relative;
 }
 
 .cartel1{
+  position: relative;
   margin-top: 70px;
-  width: 700px;
-  height: 370px;
-
-  opacity: 0.9;
+  width: 450px;
+  height: 570px;
+  -webkit-box-shadow: 15px 11px 42px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: 15px 11px 42px 6px rgba(0,0,0,0.75);
+box-shadow: 15px 11px 42px 6px rgba(0,0,0,0.75);
+transition: 0.5s ease;
 
 
 }
@@ -525,14 +529,22 @@ box-shadow: 10px 11px 20px -4px rgba(0,0,0,0.6);
 }
 
 .cartel2{
+  position: relative;
   margin-top: 70px;
   width: 450px;
   height: 570px;
+  right: 0;
   -webkit-box-shadow: 15px 11px 42px 6px rgba(0,0,0,0.75);
 -moz-box-shadow: 15px 11px 42px 6px rgba(0,0,0,0.75);
 box-shadow: 15px 11px 42px 6px rgba(0,0,0,0.75);
+transition: 0.5s ease;
+}
 
-
+.cartel1:hover{
+  transform: scale(1.1);
+}
+.cartel2:hover{
+  transform: scale(1.1);
 }
 
 .cartel2 img{
@@ -540,13 +552,52 @@ box-shadow: 15px 11px 42px 6px rgba(0,0,0,0.75);
   height: 100%;
 }
 
-#fechaCartel{
+/*#fechaCartel{
   width: 400px;
   height: 200px;
 
-}
+}*/
 #fechaCartel img{
   width: 100%;
   height: 100%;
   opacity: 0.9;
+}
+/*--Div oculto--*/
+#cartel1Oculto{
+position: absolute;
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  right: -100px;
+  -webkit-box-shadow: 15px 11px 42px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: 15px 11px 42px 6px rgba(0,0,0,0.75);
+box-shadow: 15px 11px 42px 6px rgba(0,0,0,0.75);
+transition: 0.5s ease;
+z-index: -1;
+background-color: white;
+}
+
+.columnaA{
+  height: 100%;
+
+  opacity: 0.8;
+
+}
+
+.columnaB{
+  position: relative;
+  height: 100%;
+
+  opacity: 0.8;
+}
+
+.imgAutor{
+
+  width: 100%;
+  height: 300px;
+
+}
+.imgAutor img{
+  width: 100%;
+  height: 100%;
 }
